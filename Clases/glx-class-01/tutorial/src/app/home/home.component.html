@@ -1,0 +1,8 @@
+<input type="text" [value]="test">
+<div class="container">
+  <div class="card" *ngFor="let item of cards">
+    <app-card [title]="item" (send)="getTitle($event)"></app-card>
+  </div>
+  <app-card [title]="'Pepe'" (myName)="sendName($event)"></app-card>
+  <app-card [title]="'Miguel'" [nameBrother]="name"></app-card>
+</div>

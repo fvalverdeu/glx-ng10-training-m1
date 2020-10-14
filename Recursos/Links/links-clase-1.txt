@@ -1,0 +1,18 @@
+Documentación oficial de Angular
+https://angular.io/
+
+Blog de Angular
+https://blog.angular.io/
+
+Angular CLI
+https://cli.angular.io/
+
+Documentación TypeScript y TypeScript PlayGround
+https://www.typescriptlang.org/
+
+Blog TypeScript
+https://devblogs.microsoft.com/typescript/
+
+StackBlitz
+https://stackblitz.com/
+

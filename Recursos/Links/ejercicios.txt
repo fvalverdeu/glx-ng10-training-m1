@@ -1,0 +1,2 @@
+Ejercicio Clases en TypeScript:
+https://stackblitz.com/edit/glx-ts-class-example

@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="content" [class.change-color]="active">
+    <h3>Class</h3>
+    <p>[class.class-name] = active</p>
+    <button (click)="toogleActive()">Cambiar de color</button>
+    <p>Active: {{ active }}</p>
+  </div>
+
+  <div class="content"
+    [ngClass]=" { 'change-color': active, 'change-text': active2 } ">
+    <h3>NgClass</h3>
+    <p>[ngClass] = 'class-name': active, 'class-name2': active2 </p>
+    <button (click)="toogleActive()">Cambiar de color</button>
+    <p>Active: {{ active }}</p>
+  </div>
+
+  <div class="content" [style.color]="color">
+    <h3>Style</h3>
+    <p>[style.attribute-name] = color </p>
+    <button (click)="toogleColor()">Cambiar de color</button>
+    <p>Color: {{ color }}</p>
+  </div>
+
+  <div class="content" [ngStyle]="{ 'color': color, 'font-size': fontSize }">
+    <h3>NgStyle</h3>
+    <p>[ngStyle] = color </p>
+    <button (click)="toogleColor()">Cambiar de color/tamaño texto</button>
+    <p>Color/texto: {{ color }} {{ fontSize }} </p>
+  </div>
+</div>

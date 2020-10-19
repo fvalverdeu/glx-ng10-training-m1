@@ -1,0 +1,40 @@
+<div class="container">
+  <h2>*ngIf</h2>
+
+  <button (click)="toogleShow()">Mostrar/ocultar</button>
+
+  <div class="content" *ngIf="show">
+    <p>Párrafo condicional con *ngIf</p>
+  </div>
+
+  <h2>*ngFor</h2>
+  <div class="phone" *ngFor="let phone of phoneList">
+    <p>{{phone}}</p>
+  </div>
+  <br>
+  <h2>*ngFor - objects</h2>
+  <div class="phone" *ngFor="let person of persons; let i = index;">
+    <p> {{ i + 1 }}  {{person?.name}} works in: {{ person?.company }} </p>
+  </div>
+  <br><br>
+
+  <h2>NgSwitch</h2>
+  <button (click)="setValue(1)">Value 1</button>
+  <button (click)="setValue(2)">Value 2</button>
+  <button (click)="setValue(3)">Value 3</button>
+  <div [ngSwitch]="value">
+    <div *ngSwitchCase="1">
+      El valor es 1
+    </div>
+    <div *ngSwitchCase="2">
+      El valor es 2
+    </div>
+    <div *ngSwitchCase="3">
+      El valor es 3
+    </div>
+    <div *ngSwitchDefault>
+      No tiene valor
+    </div>
+  </div>
+
+</div>

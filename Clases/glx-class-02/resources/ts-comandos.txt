@@ -1,0 +1,21 @@
+Instalar Typescript:
+
+	npm install -g typescript
+
+Verificar versión instalada:
+
+	tsc --version
+	tsc -v
+
+Modo observador (genera archivos js de forma automática):
+
+	tsc --watch
+	tsc -w
+
+Generar Proyecto (archivo .json con configuraciones):
+
+	tsc --init
+
+Ejecutar código en NodeJS (también puede probar su código en la consola del navegador):
+	
+	node <nombre-archivo-ts>

@@ -1,0 +1,10 @@
+<div (click)="showAlert()">
+  <div class="title">
+    <ng-content select="h4"></ng-content>
+  </div>
+  <div class="content">
+    <ng-content select=".body"></ng-content>
+  </div>
+  <ng-content></ng-content>
+  <ng-content select="app-test"></ng-content>
+</div>

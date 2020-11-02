@@ -1,0 +1,34 @@
+Angular Validators
+https://angular.io/api/forms/Validators
+
+Angular Forms
+https://angular.io/guide/forms-overview
+
+Angular RxJS
+https://angular.io/guide/rx-library
+
+RxJS Documentación
+https://rxjs.dev/guide/overview
+
+Learn RxJS
+https://www.learnrxjs.io/
+
+RxMarbles
+https://rxmarbles.com/
+
+Instalar RxJS
+https://www.npmjs.com/package/rxjs
+npm install rxjs
+
+API REST de prueba: JSON Placeholder
+https://jsonplaceholder.typicode.com/
+
+Recurso: posts
+https://jsonplaceholder.typicode.com/posts
+
+Postman:
+https://www.postman.com/downloads/
+
+Heroku
+https://www.heroku.com/
+

@@ -1,0 +1,13 @@
+<!-- <form #myForm (ngSubmit)="send(myForm)"> -->
+  <form #myForm="ngForm" (ngSubmit)="send()">
+  <h4>Login</h4>
+  <div class="form-group">
+    <input type="text" class="form-control" ngModel name="email" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" ngModel name="password" placeholder="Password">
+  </div>
+  <div class="form-group d-flex justify-content-center">
+    <button type="submit" class="btn btn-success btn-full">Ingresar</button>
+  </div>
+</form>

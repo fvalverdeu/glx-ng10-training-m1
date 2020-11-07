@@ -1,0 +1,20 @@
+<div class="drawer-container">
+  <div class="drawer">
+    <ul class="list-group">
+      <li class="list-group-item" routerLink='angular' routerLinkActive="active">Componentes y metadatos</li>
+      <li class="list-group-item" routerLink='technologies' routerLinkActive="active">Templates y estilos</li>
+      <li class="list-group-item" routerLink='news' routerLinkActive="active">Proyección de contenido</li>
+    </ul>
+  </div>
+  <div class="drawer-content">
+    <nav class="navbar navbar-light bg-light title">
+      <a class="navbar-brand">
+        SESIÓN 2: INTRODUCCIÓN A TYPESCRIPT Y RXJS
+      </a>
+    </nav>
+    <br><br>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

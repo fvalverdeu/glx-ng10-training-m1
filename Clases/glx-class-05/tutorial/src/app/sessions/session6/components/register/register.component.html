@@ -1,0 +1,44 @@
+<form [formGroup]="group" (ngSubmit)="send()">
+  <h4>Register</h4>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Full Name"
+      formControlName="fullName"
+      [class.is-invalid]="fullNameField.invalid"
+      [class.is-valid]="fullNameField.valid"
+    >
+    <span *ngIf="fullNameField.invalid">
+      Este campo es requerido.
+    </span>
+  </div>
+
+  <div class="form-group">
+     <input type="text" class="form-control" placeholder="Email"
+      formControlName="email"
+      [class.is-invalid]="emailField.invalid"
+    >
+    <span *ngIf="emailField.hasError('required')">
+      Este campo es requerido.
+    </span>
+    <span *ngIf="emailField.hasError('pattern')">
+      El email no tiene un formato correcto.
+    </span>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Password"
+      formControlName="password">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Confirm password"
+      formControlName="confirm" [class.is-invalid]="confirmField.invalid"
+      >
+    <span *ngIf="confirmField.hasError('required')">
+      Este campo es requerido.
+    </span>
+    <span *ngIf="confirmField.hasError('confirmpassword')">
+      {{confirmField.getError('confirmpassword')}}
+    </span>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-success btn-full" [disabled]="group.invalid">Register</button>
+  </div>
+</form>

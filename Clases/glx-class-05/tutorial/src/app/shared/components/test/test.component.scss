@@ -1,0 +1,15 @@
+:host {
+  display: block;
+  width: 200px;
+  height: 100px;
+  border: 2px dotted blue;
+  background-color: antiquewhite;
+
+  .title {
+    background-color: red;
+  }
+
+  .content {
+    background-color: greenyellow;
+  }
+}

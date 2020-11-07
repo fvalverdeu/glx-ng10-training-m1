@@ -1,0 +1,46 @@
+<div class="card">
+  <div class="card-body">
+      <!-- name -->
+      <h1>{{user.name}}</h1>
+      <!-- username -->
+      <h2>{{user.username}}</h2>
+      <p>
+        <i class="fas fa-phone-square-alt"></i>
+        <!-- phone -->
+        {{user.phone}}
+      </p>
+      <p>
+        <i class="fas fa-envelope-square"></i>
+        <!-- email -->
+        {{user.email}}
+      </p>
+      <p>
+        <i class="fab fa-chrome"></i>
+        <!-- website -->
+        {{user.website}}
+      </p>
+      <p>
+        <i class="fab fa-chrome"></i>
+        <!-- website -->
+        {{user.address.suite}}, {{ user.address.city }}
+      </p>
+  </div>
+</div>
+
+<form [formGroup]="group" (ngSubmit)="send()">
+  <h4>Contact</h4>
+  <div class="form-group">
+    <input type="text" class="form-control" formControlName="email" placeholder="Correo electrónico">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" formControlName="title" placeholder="Asunto">
+  </div>
+
+  <div class="form-group">
+    <textarea class="form-control" id="" cols="30" rows="10" formControlName="message" placeholder="Mensaje"></textarea>
+  </div>
+  <div class="form-group d-flex justify-content-center">
+    <button type="submit" class="btn btn-success btn-full">Enviar</button>
+  </div>
+</form>
+

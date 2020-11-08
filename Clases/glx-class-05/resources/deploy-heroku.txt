@@ -1,0 +1,58 @@
+https://www.heroku.com/
+
+Create a Heroku app
+	set name of app: name-of-my-app
+
+Install Heroku CLI
+https://devcenter.heroku.com/articles/heroku-cli
+
+heroku login
+cd project-directory
+git init
+
+herou git:remote -a name-of-my-app
+
+
+Install Express:
+	npm install express
+
+Add server.js file in your Angular Project:
+
+/*
+const express = require('express');
+
+const app = express();
+
+app.use(express.static('./dist/demo-api-rest'));
+app.get('/*', (req,res) => {
+    res.sendFile('index.html', { root: 'dist/demo-api-rest/' });
+});
+
+app.listen(process.env.PORT || 8080);
+console.log(`Running on port ${process.env.PORT || 8080}`)
+*/
+
+Modify package.json file:
+
+/*
+  "scripts": {
+    "ng": "ng",
+    "start:prod": "node server.js",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "postinstall": "ng build --prod"
+  },
+*/
+
+git add .
+git commit -m "comment commit"
+
+git push heroku master
+
+
+
+
+
+

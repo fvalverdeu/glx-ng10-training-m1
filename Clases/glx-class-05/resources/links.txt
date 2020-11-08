@@ -1,0 +1,11 @@
+https://jsonplaceholder.typicode.com/
+https://jsonplaceholder.typicode.com/users
+
+https://app.quicktype.io/
+
+https://jsonplaceholder.typicode.com/todos
+https://github.com/typicode/json-server
+
+https://dashboard.heroku.com/apps
+
+https://glx-angular-p1.herokuapp.com/todo
